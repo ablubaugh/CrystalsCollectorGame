@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Crystals Collector Game</title>
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h1>Crystals Collector!</h1>
+		</header>
+
+		<section>
+			<p>Instructions:</p>
+			<br/>
+			<p>A random number will be displayed below. By clicking on a crystal you will add an amount of points to your total score.</p>
+			<br/>
+			<p>WIN: match your total score to random number. <br>
+                LOSE: total score goes above the random number.</p>
+			<br/>
+			<p>The crystal values are hidden until clicked on.</p>
+			<br/>
+			<p>When the game restarts the value of the crystals will change.</p>
+		</section>
+
+		<div id="numberandscore">
+			<div id="random-number-generator">
+				<span id="random-number"></span>
+			</div>
+
+			<div id="score">
+				<span id="win-or-lose"></span>
+				<p>Wins: <span id="win-counter">0</span></p>
+				<p>Losses: <span id="loss-counter">0</span></p>
+			</div>
+		</div>
+
+		<div id="crystals">
+			<img id="amethyst" src="assets/images/amethyst.jpg" alt="amethyst">
+			<img id="citrine" src="assets/images/citrine.jpg" alt="citrine">
+			<img id="emerald" src="assets/images/emerald.jpg" alt="emerald">
+			<img id="jade" src="assets/images/jade.jpg" alt="jade">
+		</div>
+
+		<div id="current-score">
+			<h1>TOTAL SCORE:</h1>
+			<span id="current-score-counter"></span>
+		</div>
+	</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.1.0.slim.min.js" integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
